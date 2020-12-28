@@ -1,11 +1,19 @@
 {
   "name": "wappermelon",
   "description": "A simple bot framework for WhatsApp.",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "main": "./src/main.js",
   "license": "Apache-2.0",
   "author": {
     "name": "Wictor Nogueira"
+  },
+  "homepage": "https://github.com/wictornogueira/wappermelon",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wictornogueira/wappermelon"
+  },
+  "bugs": {
+    "url": "https://github.com/wictornogueira/wappermelon/issues"
   },
   "keywords": [
     "wappermelon",
