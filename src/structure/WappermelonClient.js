@@ -3,10 +3,9 @@ const path = require('path')
 const { Client } = require('whatsapp-web.js')
 
 class WappermelonClient extends Client {
-  constructor ({ puppeteer, session, staff = [] } = {}) {
-    super({ puppeteer: Object.assign({ headless: true }, puppeteer) })
+  constructor ({ session, staff, options }) {
+    super(options)
     this.options.session = this._resolveSession(session)
-
     this.staff = staff
   }
 
@@ -32,6 +31,10 @@ class WappermelonClient extends Client {
     })
 
     return super.initialize() 
+  }
+
+  isStaff (id) {
+    return this.staff === id || (Array.isArray(this.staff) && this.staff.includes(id))
   }
 }
 

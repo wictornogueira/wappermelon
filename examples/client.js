@@ -3,15 +3,15 @@ const qrcode = require('qrcode-terminal')
 const { WappermelonClient, CommandHandler } = require('wappermelon')
 
 class ExampleClient extends WappermelonClient {
-  constructor ({ puppeteer, session }) {
-    super({ puppeteer, session })
+  constructor (options) {
+    super(options)
 
     this.commandHandler = new CommandHandler(this)
     this.commandHandler.loadAll(path.join(__dirname, 'commands/'))
   }
 }
 
-client = new ExampleClient({ session: 'session.json' })
+client = new ExampleClient({ session: 'session.json', options: { puppeteer: { headless: true } } })
 client.initialize()
 
 client.on('qr', qr => {
@@ -23,5 +23,5 @@ client.on('qr', qr => {
 client.on('auth-failure', console.log)
 
 client.on('ready', () => {
-  console.log(`Connected as ${client.info.pushname} (${client.info.me.user}).\nDone in ${process.uptime().toFixed(1)} seconds.`)
+  console.log(`Connected as ${client.info.pushname} (+${client.info.me.user}).\nDone in ${process.uptime().toFixed(1)} seconds.`)
 })
