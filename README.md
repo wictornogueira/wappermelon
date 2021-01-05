@@ -1,4 +1,7 @@
-# Wappermelon 
+# Wappermelon
+
+![Versão](https://img.shields.io/npm/v/wappermelon?style=flat-square)
+![Licença](https://img.shields.io/github/license/wictornogueira/wappermelon?style=flat-square)
 
 Um simples framework para desenvolver bots para WhatsApp.
 
@@ -11,6 +14,10 @@ npm i wappermelon
 ```
 
 O Wappermelon depende do [whatsapp-web.js](https://github.com/pedroslopez/whatsapp-web.js/) para funcionar. Consulte o procedimento de instalação na pagina inicial do repositório.
+
+## Uso
+
+Consulte os [exemplos de uso](https://github.com/wictornogueira/wappermelon/tree/main/examples).
 
 ## Aviso
 

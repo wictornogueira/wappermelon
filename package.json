@@ -1,7 +1,7 @@
 {
   "name": "wappermelon",
   "description": "A simple bot framework for WhatsApp.",
-  "version": "2.0.1",
+  "version": "2.0.3",
   "main": "./src/main.js",
   "license": "Apache-2.0",
   "author": {
