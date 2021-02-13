@@ -1,8 +1,10 @@
 {
   "name": "wappermelon",
-  "description": "A simple bot framework for WhatsApp.",
+  "description": "A simple bot framework for whatsapp-web.js.",
   "version": "2.0.3",
-  "main": "./src/main.js",
+  "main": "./dist/main.js",
+  "module": "./dist/esm/main.js",
+  "types": "./dist/main.d.ts",
   "license": "Apache-2.0",
   "author": {
     "name": "Wictor Nogueira"
@@ -23,8 +25,17 @@
     "bot",
     "web"
   ],
+  "scripts": {
+    "prepublishOnly": "npm run build",
+    "build": "npm run build:cjs && npm run build:esm",
+    "build:cjs": "tsc -p tsconfig.json",
+    "build:esm": "tsc -p tsconfig-esm.json"
+  },
   "devDependencies": {
-    "qrcode-terminal": "^0.12.0",
-    "whatsapp-web.js": "^1.12.0"
+    "typescript": "^4.1.3"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "whatsapp-web.js": "^1.12.4"
   }
 }
