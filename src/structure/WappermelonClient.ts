@@ -1,5 +1,5 @@
 import { writeFileSync } from 'fs'
-import { Client, ClientOptions, ClientSession } from 'whatsapp-web.js'
+import { Client, ClientOptions } from 'whatsapp-web.js'
 import { resolveSession } from '../utils'
 
 interface WappermelonClientOptions {
