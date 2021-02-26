@@ -1,4 +1,4 @@
-const { generate } = require('qrcode-terminal')
+const qrcode = require('qrcode-terminal')
 const { Listener } = require('wappermelon')
 
 class QrListener extends Listener {
@@ -10,7 +10,7 @@ class QrListener extends Listener {
   }
 
   execute (qr) {
-    generate(qr, { small: true }, qr => {
+    qrcode.generate(qr, { small: true }, qr => {
       console.log(`Scan the following QR Code as you were connecting to WhatsApp Web:\n${qr}`)
     })
   }

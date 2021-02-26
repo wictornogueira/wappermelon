@@ -1,4 +1,4 @@
-const path = require('path')
+const { join } = require('path')
 const { WappermelonClient, CommandHandler, InhibitorHandler, ListenerHandler } = require('wappermelon')
 
 class ExampleClient extends WappermelonClient {
