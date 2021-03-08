@@ -20,5 +20,5 @@ Check the [exemples](https://github.com/wictornogueira/wappermelon/tree/main/exa
 ## Disclaimer
 
 This project is **not** associated with WhatsApp.  
-WhatsApp doesn't support bots outside its commercial API, neighter allows modified/non-oficial clients. With that being said, keep in mind that you **may** have your account suspended. Use it by your own risk.  
+WhatsApp doesn't support bots outside its commercial API, neighter allows modified/non-oficial clients. With that being said, keep in mind that you **may** have your account suspended. Use at your own risk.  
 Check the latest [terms of use](https://www.whatsapp.com/legal/) for your country.
