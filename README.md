@@ -15,7 +15,7 @@ npm i wappermelon
 
 ## Usage
 
-Check the [exemples](https://github.com/wictornogueira/wappermelon/tree/main/examples).
+Here's an [exemple](https://github.com/wictornogueira/wappermelon/tree/main/example).
 
 ## Disclaimer
 
