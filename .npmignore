@@ -5,3 +5,4 @@ src
 README_PT.md
 tsconfig*.json
 *.lock
+.gitattributes
