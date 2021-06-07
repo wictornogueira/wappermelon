@@ -2,3 +2,6 @@ node_modules
 examples
 src
 .gitignore
+README_PT.md
+tsconfig*.json
+*.lock
