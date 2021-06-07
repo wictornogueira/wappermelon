@@ -10,8 +10,7 @@ Um simples framework para [whatsapp-web.js](https://github.com/pedroslopez/whats
 O Wappermelon está disponível no Node Package Manager.
 
 ```bash
-npm i whatsapp-web.js
-npm i wappermelon
+npm i whatsapp-web.js wappermelon
 ```
 
 ## Uso

@@ -10,8 +10,7 @@ Fala português? Cheque o [README](README_PT.md) para seu idioma.
 Wappermelon can be installed through Node Package Manager.
 
 ```bash
-npm i whatsapp-web.js
-npm i wappermelon
+npm i whatsapp-web.js wappermelon
 ```
 
 ## Usage
